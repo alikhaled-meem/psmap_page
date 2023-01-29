@@ -1,14 +1,15 @@
 /* Error: Undefined mixin.
  *    ,
- * 13 | /   @include respond-below(md) {
- * 14 | |     background-size: 80%;
- * 15 | |     min-height: 55vh;
- * 16 | |     padding: 10px 20px 20px;
- * 17 | |     background-position: bottom;
- * 18 | |     justify-content: flex-start;
- * 19 | \   }
+ * 14 | /   @include respond-below(md) {
+ * 15 | |     background-image: url(../../assets/images/dialogue/dialogue_img_mobile.svg);
+ * 16 | |     background-size: 80%;
+ * 17 | |     min-height: 65vh;
+ * 18 | |     padding: 10px 20px 20px;
+ * 19 | |     background-position: bottom;
+ * 20 | |     align-items: flex-start;
+ * 21 | \   }
  *    '
- *   sections\dialogue\dialogue-style.scss 13:3  root stylesheet */
+ *   sections\dialogue\dialogue-style.scss 14:3  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -18,5 +19,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 13 \2502  \250c    @include respond-below(md) {\a 14 \2502  \2502      background-size: 80%;\a 15 \2502  \2502      min-height: 55vh;\a 16 \2502  \2502      padding: 10px 20px 20px;\a 17 \2502  \2502      background-position: bottom;\a 18 \2502  \2502      justify-content: flex-start;\a 19 \2502  \2514    }\a    \2575 \a   sections\\dialogue\\dialogue-style.scss 13:3  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 14 \2502  \250c    @include respond-below(md) {\a 15 \2502  \2502      background-image: url(../../assets/images/dialogue/dialogue_img_mobile.svg);\a 16 \2502  \2502      background-size: 80%;\a 17 \2502  \2502      min-height: 65vh;\a 18 \2502  \2502      padding: 10px 20px 20px;\a 19 \2502  \2502      background-position: bottom;\a 20 \2502  \2502      align-items: flex-start;\a 21 \2502  \2514    }\a    \2575 \a   sections\\dialogue\\dialogue-style.scss 14:3  root stylesheet";
 }
