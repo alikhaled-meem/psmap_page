@@ -1,13 +1,102 @@
 /* Error: Undefined mixin.
- *    ,
- * 19 | /   @include respond-below(md) {
- * 20 | |     height: 100vh;
- * 21 | |     z-index: 100;
- * 22 | |     width: 50vw !important;
- * 23 | |     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
- * 24 | \   }
- *    '
- *   sections\header\header-style.scss 19:3  root stylesheet */
+ *     ,
+ * 67  | /   @include respond-below(md) {
+ * 68  | |     z-index: 10;
+ * 69  | |     justify-content: center;
+ * 70  | |     position: fixed;
+ * 71  | |     background-color: #fff;
+ * 72  | |     width: 100%;
+ * 73  | |     &--list {
+ * 74  | |       display: none;
+ * 75  | |     }
+ * 76  | |     .menu__icon {
+ * 77  | |       display: block;
+ * 78  | |       position: absolute;
+ * 79  | |       right: 20px;
+ * 80  | |       top: 35%;
+ * 81  | |       display: flex;
+ * 82  | |       gap: 6px;
+ * 83  | |       flex-direction: column;
+ * 84  | |       span {
+ * 85  | |         border: 2px solid #2f354d;
+ * 86  | |         width: 30px;
+ * 87  | |         border-radius: 4px;
+ * 88  | |         background-color: #2f354d;
+ * 89  | |         height: 1px;
+ * 90  | |       }
+ * 91  | |     }
+ * 92  | | 
+ * 93  | |     &_sidebar {
+ * 94  | |       background-color: #38383830;
+ * 95  | |       position: fixed;
+ * 96  | |       height: 100vh;
+ * 97  | |       width: 100vw;
+ * 98  | |       top: 0;
+ * 99  | |       right: 100vw;
+ * 100 | |       z-index: 10;
+ * 101 | |       transition: all 0.2s ease-in-out;
+ * 102 | |       display: flex;
+ * 103 | |       &.active {
+ * 104 | |         justify-content: flex-end;
+ * 105 | |         right: 0;
+ * 106 | |         .modal {
+ * 107 | |           margin-left: 30vw;
+ * 108 | |         }
+ * 109 | |       }
+ * 110 | |       .modal {
+ * 111 | |         transition: all 0.1s ease-in-out;
+ * 112 | |         display: flex;
+ * 113 | |         flex-direction: column;
+ * 114 | |         background-color: #fff;
+ * 115 | |         width: 70vw;
+ * 116 | |         right: 0;
+ * 117 | |         margin-left: 100vw;
+ * 118 | |         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ * 119 | |         .logo {
+ * 120 | |           padding: 40px 25px 20px;
+ * 121 | |         }
+ * 122 | |         &--item {
+ * 123 | |           padding: 16px 0;
+ * 124 | |           margin: 0 16px;
+ * 125 | |           color: #2f354d;
+ * 126 | |           font-weight: 600;
+ * 127 | |           border-bottom: 1px solid #c9c9c9;
+ * 128 | |           a {
+ * 129 | |             color: #2f354d;
+ * 130 | |             &:hover {
+ * 131 | |               color: #ff2800;
+ * 132 | |             }
+ * 133 | |           }
+ * 134 | |           .nav-link.active {
+ * 135 | |             position: relative;
+ * 136 | |             color: #ff2800;
+ * 137 | |           }
+ * 138 | |         }
+ * 139 | |         .languges {
+ * 140 | |           padding: 12px 0;
+ * 141 | |           margin: 16px;
+ * 142 | |           .lang__btn {
+ * 143 | |             padding: 8px 24px;
+ * 144 | |             text-align: center;
+ * 145 | |             width: 112px;
+ * 146 | |             height: 35px;
+ * 147 | |             background: #fff;
+ * 148 | |             border-radius: 7px;
+ * 149 | |             color: #2f354d;
+ * 150 | |             text-decoration: none;
+ * 151 | |             cursor: pointer;
+ * 152 | |             margin: 30px 10px;
+ * 153 | |             &.active {
+ * 154 | |               background: #ff2800;
+ * 155 | |               color: #fff;
+ * 156 | |             }
+ * 157 | |           }
+ * 158 | |         }
+ * 159 | |       }
+ * 160 | |     }
+ * 161 | \   }
+ *     '
+ *   sections\header\header-style.scss 67:3  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -17,5 +106,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502  \250c    @include respond-below(md) {\a 20 \2502  \2502      height: 100vh;\a 21 \2502  \2502      z-index: 100;\a 22 \2502  \2502      width: 50vw !important;\a 23 \2502  \2502      box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;\a 24 \2502  \2514    }\a    \2575 \a   sections\\header\\header-style.scss 19:3  root stylesheet";
+  content: "Error: Undefined mixin.\a     \2577 \a 67  \2502  \250c    @include respond-below(md) {\a 68  \2502  \2502      z-index: 10;\a 69  \2502  \2502      justify-content: center;\a 70  \2502  \2502      position: fixed;\a 71  \2502  \2502      background-color: #fff;\a 72  \2502  \2502      width: 100%;\a 73  \2502  \2502      &--list {\a 74  \2502  \2502        display: none;\a 75  \2502  \2502      }\a 76  \2502  \2502      .menu__icon {\a 77  \2502  \2502        display: block;\a 78  \2502  \2502        position: absolute;\a 79  \2502  \2502        right: 20px;\a 80  \2502  \2502        top: 35%;\a 81  \2502  \2502        display: flex;\a 82  \2502  \2502        gap: 6px;\a 83  \2502  \2502        flex-direction: column;\a 84  \2502  \2502        span {\a 85  \2502  \2502          border: 2px solid #2f354d;\a 86  \2502  \2502          width: 30px;\a 87  \2502  \2502          border-radius: 4px;\a 88  \2502  \2502          background-color: #2f354d;\a 89  \2502  \2502          height: 1px;\a 90  \2502  \2502        }\a 91  \2502  \2502      }\a 92  \2502  \2502  \a 93  \2502  \2502      &_sidebar {\a 94  \2502  \2502        background-color: #38383830;\a 95  \2502  \2502        position: fixed;\a 96  \2502  \2502        height: 100vh;\a 97  \2502  \2502        width: 100vw;\a 98  \2502  \2502        top: 0;\a 99  \2502  \2502        right: 100vw;\a 100 \2502  \2502        z-index: 10;\a 101 \2502  \2502        transition: all 0.2s ease-in-out;\a 102 \2502  \2502        display: flex;\a 103 \2502  \2502        &.active {\a 104 \2502  \2502          justify-content: flex-end;\a 105 \2502  \2502          right: 0;\a 106 \2502  \2502          .modal {\a 107 \2502  \2502            margin-left: 30vw;\a 108 \2502  \2502          }\a 109 \2502  \2502        }\a 110 \2502  \2502        .modal {\a 111 \2502  \2502          transition: all 0.1s ease-in-out;\a 112 \2502  \2502          display: flex;\a 113 \2502  \2502          flex-direction: column;\a 114 \2502  \2502          background-color: #fff;\a 115 \2502  \2502          width: 70vw;\a 116 \2502  \2502          right: 0;\a 117 \2502  \2502          margin-left: 100vw;\a 118 \2502  \2502          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;\a 119 \2502  \2502          .logo {\a 120 \2502  \2502            padding: 40px 25px 20px;\a 121 \2502  \2502          }\a 122 \2502  \2502          &--item {\a 123 \2502  \2502            padding: 16px 0;\a 124 \2502  \2502            margin: 0 16px;\a 125 \2502  \2502            color: #2f354d;\a 126 \2502  \2502            font-weight: 600;\a 127 \2502  \2502            border-bottom: 1px solid #c9c9c9;\a 128 \2502  \2502            a {\a 129 \2502  \2502              color: #2f354d;\a 130 \2502  \2502              &:hover {\a 131 \2502  \2502                color: #ff2800;\a 132 \2502  \2502              }\a 133 \2502  \2502            }\a 134 \2502  \2502            .nav-link.active {\a 135 \2502  \2502              position: relative;\a 136 \2502  \2502              color: #ff2800;\a 137 \2502  \2502            }\a 138 \2502  \2502          }\a 139 \2502  \2502          .languges {\a 140 \2502  \2502            padding: 12px 0;\a 141 \2502  \2502            margin: 16px;\a 142 \2502  \2502            .lang__btn {\a 143 \2502  \2502              padding: 8px 24px;\a 144 \2502  \2502              text-align: center;\a 145 \2502  \2502              width: 112px;\a 146 \2502  \2502              height: 35px;\a 147 \2502  \2502              background: #fff;\a 148 \2502  \2502              border-radius: 7px;\a 149 \2502  \2502              color: #2f354d;\a 150 \2502  \2502              text-decoration: none;\a 151 \2502  \2502              cursor: pointer;\a 152 \2502  \2502              margin: 30px 10px;\a 153 \2502  \2502              &.active {\a 154 \2502  \2502                background: #ff2800;\a 155 \2502  \2502                color: #fff;\a 156 \2502  \2502              }\a 157 \2502  \2502            }\a 158 \2502  \2502          }\a 159 \2502  \2502        }\a 160 \2502  \2502      }\a 161 \2502  \2514    }\a     \2575 \a   sections\\header\\header-style.scss 67:3  root stylesheet";
 }
